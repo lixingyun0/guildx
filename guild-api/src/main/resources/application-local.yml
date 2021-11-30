@@ -1,0 +1,36 @@
+spring:
+  redis:
+    database: 6
+    host:
+    port:
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 30
+        max-wait: 15000
+        max-idle: 10
+        min-idle: 1
+    password:
+  datasource:
+    url:
+    username: root
+    password:
+
+#开启跨域处理
+api:
+  setting:
+    cors:
+      open: true
+
+
+upload:
+  local:
+    path: /work/front/upload/
+
+
+logging:
+  level:
+    com.baomidou.example.mapper: debug
+    console: debug
+
+

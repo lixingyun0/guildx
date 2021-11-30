@@ -1,0 +1,45 @@
+server:
+  port: 10001
+
+spring:
+  redis:
+    database: 6
+    host:
+    port:
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 30
+        max-wait: 15000
+        max-idle: 10
+        min-idle: 1
+    password:
+  datasource:
+    url:
+    username: root
+    password:
+  rabbitmq:
+    host:
+    virtual-host:
+    username: MjphbXFwLWNuLTdtejJjY2Y2ZTAwaDpMVEFJNXRTZ0RXbWdMRmduV3c1Wk0xRHo=
+    password:
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+#开启跨域处理
+api:
+  setting:
+    cors:
+      open: true
+
+upload:
+  local:
+    path: /work/front/upload/
+
+
+logging:
+  level:
+    com.baomidou.example.mapper: debug
+
+
